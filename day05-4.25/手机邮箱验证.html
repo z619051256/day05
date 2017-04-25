@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		//手机
+		var sj = /^1\d{10}$/;
+		var sr =prompt("请输入手机号");
+		if(sj.test(sr) == true){
+			alert("格式正确");
+		}else{
+			alert("格式错误");
+		}
+		//邮箱
+		var yx = /^\w{3,}@(qq.|126.|163.|sina.)(com|cn)/;	
+		var sryx =prompt("请输入邮箱");
+		console.log(yx.test(sryx));
+		if(yx.test(sryx) == true){
+			alert("格式正确");
+		}else{
+			alert("格式错误");
+		}
+	</script>
+</html>
